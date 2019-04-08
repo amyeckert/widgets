@@ -62,7 +62,6 @@ p, a {
 .map-widget_info {
     margin: 0 auto;
     background-color: #ffffff;
-    /* border: 1px solid rgba(166,166,166,0.9); */
     -webkit-box-shadow: 1px 1px 8px 1px rgba(166,166,166,0.7);
     -moz-box-shadow: 1px 1px 8px 1px rgba(166,166,166,0.7);
     box-shadow: 1px 1px 8px 1px rgba(166,166,166,0.7);
@@ -181,7 +180,7 @@ p, a {
         width: 300px;
         margin: 0 auto;
         position: absolute;
-        top: calc(50% - 270px);
+        top: calc(50% - 230px);
         left: calc(50% - 150px);
 
     }
