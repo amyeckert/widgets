@@ -6,55 +6,146 @@
         <meta charset="utf-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet"> 
-
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
         <link href="css/map-widget.css" rel="stylesheet" type="text/css" />
     </head>
 
     <body class="bg-white">
         <main>
-
-                <div class="map-widget">
-                    <div class="map-widget_map">
-                        <img src="img/map.png" alt="map showing O3's location" class="map-widget_image">
-                        
-                        <div class="map-widget_pin">
-                           <img src="img/pin.svg" alt="pin on map">
-                        </div>
+            <section class="map-widget">
+                <h2 class="visually-hidden"> Map Widget</h2>
+                <div class="map-widget_map">
+                    <img src="img/map.png" alt="map showing O3's location" class="map-widget_image">
+                    
+                    <div class="map-widget_pin">
+                        <img src="img/pin.svg" alt="pin on map">
                     </div>
-
-                    <div class="map-widget_info">
-
-                        <div class="map-widget_info--top">
-                            <p class="map-widget_info--name">
-                                    
-                                <svg viewbox="0 0 54 54" xmlns="http://www.w3.org/2000/svg">
-                                <path d="M34.8 27a7.8 7.8 0 1 1-7.8-7.8 7.9 7.9 0 0 1 7.8 7.8z" fill="currentColor"></path>
-                                <path d="M0 0v54h54V0zm27 40a13 13 0 1 1 13-13 13 13 0 0 1-13 13zm16.8 6.7c-1.6 0-3-.8-3-2.8h1.7a1.2 1.2 0 0 0 1.3 1.3 1.3 1.3 0 0 0 1.3-1.3 1.2 1.2 0 0 0-1.4-1.3h-.2v-1.5h.2c.9 0 1.2-.4 1.2-1.2a1.2 1.2 0 1 0-2.3-.1h-1.7a2.6 2.6 0 0 1 2.9-2.7 2.7 2.7 0 0 1 2.9 2.7 2.3 2.3 0 0 1-1.1 2 2.3 2.3 0 0 1 1.2 2.1 2.8 2.8 0 0 1-3 2.8z" fill="currentColor"></path></svg>
-                                       
-                                <span>O<sub>3</sub> World</span>
-                            </p>      
-                        </div>
-                        
-                        <div class="map-widget_info--bottom">
-                            
-                            <address class="map-widget_info--address border-bottom"> 
-                                <p>1339 Frankford Ave </p>  
-                                <p>Suite 3 </p>  
-                                <p>Philadelphia, PA, 19125 </p>  
-                                <a href="https://www.google.com/maps" class="directions">Driving Directions</a>  
-                            </address>
-
-                            <address class="map-widget_info--phone">   
-                                <a href="tel:(215) 592-4739">(215) 592-4739</a>
-                            </address>
-
-                        </div>
-                        
-                    </div>
-
-                   
-
                 </div>
+
+                <div class="map-widget_info">
+
+                    <div class="map-widget_info--top">
+                        <p class="map-widget_info--name">
+                                
+                            <svg viewbox="0 0 54 54" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M34.8 27a7.8 7.8 0 1 1-7.8-7.8 7.9 7.9 0 0 1 7.8 7.8z" fill="currentColor"></path>
+                            <path d="M0 0v54h54V0zm27 40a13 13 0 1 1 13-13 13 13 0 0 1-13 13zm16.8 6.7c-1.6 0-3-.8-3-2.8h1.7a1.2 1.2 0 0 0 1.3 1.3 1.3 1.3 0 0 0 1.3-1.3 1.2 1.2 0 0 0-1.4-1.3h-.2v-1.5h.2c.9 0 1.2-.4 1.2-1.2a1.2 1.2 0 1 0-2.3-.1h-1.7a2.6 2.6 0 0 1 2.9-2.7 2.7 2.7 0 0 1 2.9 2.7 2.3 2.3 0 0 1-1.1 2 2.3 2.3 0 0 1 1.2 2.1 2.8 2.8 0 0 1-3 2.8z" fill="currentColor"></path></svg>
+                                    
+                            <span>O<sub>3</sub> World</span>
+                        </p>      
+                    </div>
+                    
+                    <div class="map-widget_info--bottom">
+                        
+                        <address class="map-widget_info--address border-bottom"> 
+                            <p>1339 Frankford Ave </p>  
+                            <p>Suite 3 </p>  
+                            <p>Philadelphia, PA, 19125 </p>  
+                            <a href="https://www.google.com/maps" id="get-directions" class="directions" title="Get Driving Directions">Driving Directions</a>  
+                        </address>
+
+                        <address class="map-widget_info--phone">   
+                            <a href="tel:(215) 592-4739" id="call-this-number" title="(215) 592-4739">(215) 592-4739</a>
+                        </address>
+
+                    </div>
+                </div>
+            </section>
+
+            <section class="restaurant-widget">
+                <h2 class="visually-hidden">Restaurant Widget</h2>
+
+                <div class="restaurant-widget_container">
+                    <div class="restaurant-widget_header">
+                        <h3>Cugino's Italian Eatery</h3>
+                        <p class="restaurant-widget_description">
+                            This restaurant features various traditional Italian dishes just like your grandmother used to make.
+                            Whether it's pizza, pasta, or a salad, Cugino's has what you like.
+                        </p>
+                        <hr>
+                    </div> 
+                    
+                    <div class="restaurant-widget_info">
+                        <div class="col-left">
+                            <address class="restaurant-widget_address">   
+                                <p><strong>Address</strong></p>
+                                <p>215 New Rd</p>
+                                <p>Philadelphia, PA</p>
+                                <p>19129</p>
+                            </address>
+
+                            <address class="restaurant-widget_phone">   
+                                <a href="tel:(215) 213-1010">(215) 213-1010</a>
+                            </address>
+
+                            <ul class="restaurant-widget_hours">
+                                <li><strong>Mon</strong> Closed</li>
+                                <li><strong>Tues</strong> Closed</li>
+                                <li><strong>Wed</strong> 5:30 pm - 10:30 pm</li>
+                                <li><strong>Thurs</strong> 5:30 pm - 10:30 pm</li>
+                                <li><strong>Fri</strong> 5:30 pm - 10:30 pm</li>
+                                <li><strong>Sat</strong> 5:30 pm - 10:30 pm</li>
+                                <li><strong>Sun</strong> 5:30 pm - 10:30 pm</li>
+                            </ul>
+                        </div>
+
+                        <div class="col-right">
+                            <ul class="restaurant-widget_share">
+                                <li><a href="#" id="add-photo" title="Add a Photo"><span class="fa fa-camera" aria-hidden="true"></span> Add Photo</a></li>
+                                <li><a href="#" id="share-this" title="Share This"><span class="fa fa-share" aria-hidden="true"></span> Share</li>
+                                <li><a href="#" id="bookmark-this" title="Bookmark This"><span class="fa fa-bookmark-o" aria-hidden="true"></span> Bookmark</a></li>
+                            </ul>
+
+                            <figure class="restaurant-widget_img">
+                                <img src="https://via.placeholder.com/150" alt="cheese pull">
+
+                                <figcaption class="restaurant-widget_img-caption">
+                                    <img src="https://via.placeholder.com/25" alt="reviewer-img">    
+                                    <p> 1/2 roaste onion &hellip;the sweetest onions&hellip; <span>by Tracy W.</span> </p>
+                                </figcaption>  
+                            </figure>
+
+                        </div>
+                        <hr>
+                    </div>
+
+                    <div class="restaurant-widget_footer">
+                        <div class="restaurant-widget_reviews">
+                            <p>500 total reviews</p>
+
+                            <div>
+                                <input type="checkbox" id="1-star" name="1-star"
+                                        checked>
+                                <label for="1-star"><span class="fa fa-star"></span></label>
+                            </div>
+                            <div>
+                                <input type="checkbox" id="1-star" name="2-star"
+                                        checked>
+                                <label for="2-star"><span class="fa fa-star"></span></label>
+                            </div>
+                            <div>
+                                <input type="checkbox" id="1-star" name="3-star"
+                                        checked>
+                                <label for="3-star"><span class="fa fa-star"></span></label>
+                            </div>
+                            <div>
+                                <input type="checkbox" id="1-star" name="4-star"
+                                        checked>
+                                <label for="4-star"><span class="fa fa-star"></span></label>
+                            </div>
+                            <div>
+                                <input type="checkbox" id="1-star" name="5-star"
+                                        checked>
+                                <label for="5-star"><span class="fa fa-star"></span></label>
+                            </div>
+
+                           <a href="#" id="write-review" title="Write a Review" class="restaurant-widget_write"><button><span class="fa fa-star"></span> Write a review</button></a>
+
+                        </div>
+                    </div>
+                </div>
+        
+            </section>
 
         </main>
     </body>
